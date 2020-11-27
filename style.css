@@ -9,7 +9,32 @@
   border: 1px solid red;
 }
 
-/* Wrapper*/
+/* Content */
 .wrapper {
   min-width: 1024px;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(538px, 1180px) auto auto;
+  align-content: start;
+  gap: 2px;
+}
+
+.hero {
+  grid-column: 1 / -1;
+  min-height: 538px;
+  max-height: 1180px;
+  background-image: url("assets/images/your_verse_hero.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.copyright {
+  grid-column: 1 / span 2;
+}
+
+.footer-nav {
+  grid-column: span 2 / -1;
 }
