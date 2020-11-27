@@ -1,0 +1,15 @@
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -490px;
+  width: 980px;
+  height: 36px;
+  border: 1px solid red;
+}
+
+/* Wrapper*/
+.wrapper {
+  min-width: 1024px;
+}
