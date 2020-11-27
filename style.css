@@ -7,6 +7,7 @@
   width: 980px;
   height: 36px;
   border: 1px solid red;
+  z-index: 1;
 }
 
 /* Content */
@@ -26,9 +27,34 @@
   grid-column: 1 / -1;
   min-height: 538px;
   max-height: 1180px;
+  position: relative;
   background-image: url("assets/images/your_verse_hero.jpg");
   background-size: cover;
   background-position: bottom;
+}
+
+.hero-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  text-align: center;
+  margin-top: -170px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  border: 1px solid red;
+  z-index: 1;
+}
+
+@media (min-height: 1250px) {
+  .hero-wrapper {
+    margin-top: -400px;
+  }
+}
+
+.hero-wrapper h1 {
+  font-size: 60px;
 }
 
 .copyright {
