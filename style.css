@@ -96,10 +96,45 @@ body {
   vertical-align: middle;
 }
 
-.copyright {
-  grid-column: 1 / span 2;
+.copyright,
+.footer-navbar {
+  padding-bottom: 26px;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgb(110, 110, 110);
 }
 
-.footer-nav {
+.copyright > p,
+.footer-navbar > nav {
+  padding-top: 1.5em;
+}
+
+.copyright a,
+.footer-navbar a {
+  text-decoration: none;
+}
+
+.copyright a:hover,
+.footer-navbar a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  grid-column: 1 / span 2;
+  padding-left: 32%;
+}
+
+.footer-navbar {
   grid-column: span 2 / -1;
+  padding-left: 3%;
+}
+
+.divider {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+#flag {
+  vertical-align: middle;
+  border-radius: 50%;
 }
