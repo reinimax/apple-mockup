@@ -74,7 +74,7 @@ body {
   height: 100vh;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: minmax(538px, 1180px) auto auto;
   align-content: start;
   gap: 2px;
@@ -107,6 +107,10 @@ body {
 .hero-wrapper > *,
 .promo {
   cursor: pointer;
+}
+
+img {
+  max-width: 100%;
 }
 
 @media (min-height: 1250px) {
